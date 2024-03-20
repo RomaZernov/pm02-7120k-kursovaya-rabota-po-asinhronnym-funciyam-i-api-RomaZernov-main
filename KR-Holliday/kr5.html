@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="api.php.json" />
+    <link href="./jquery-ui-1.13.2.custom/jquery-ui.css" rel="stylesheet" />
+
+    <title>Ешкере</title>
+  </head>
+  <body>
+    <section>
+      <h1>Саня и Ромчик представляют</h1>
+    </section>
+    <section>
+      <label for="year">Введите год :</label>
+      <input type="text" name="year" value="" id="year" />
+      <br />
+
+      <label for="month">Выберите месяц:</label>
+
+      <select type="text" name="month" id="month">
+        <option value="01">Январь</option>
+        <option value="02">Февраль</option>
+        <option value="03">Март</option>
+        <option value="04">Апрель</option>
+        <option value="05">Май</option>
+        <option value="06">Июнь</option>
+        <option value="07">Июль</option>
+        <option value="08">Август</option>
+        <option value="09">Сентябрь</option>
+        <option value="10">Октябрь</option>
+        <option value="11">Ноябрь</option>
+        <option value="12">Декабрь</option>
+      </select>
+
+      <br />
+      <label for="country_code">Выберите страну:</label>
+      <select type="text" name="country_code" id="country_code"></select>
+      <button type="button" onclick="getData()">Выполнить запрос</button>
+    </section>
+    <div id="result"></div>
+    <div id="wikiWindow"></div>
+    <h2 class="demoHeaders">Accordion</h2>
+    <div id="accordion">
+      <h3>First</h3>
+      <div>Тут инфа про Россию</div>
+      <h3>Second</h3>
+      <div>Phasellus mattis tincidunt nibh.</div>
+      <h3>Third</h3>
+      <div>Nam dui erat, auctor a, dignissim quis.</div>
+    </div>
+    <script src="./jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script src="./jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <script src="aue2.js"></script>
+  </body>
+</html>
